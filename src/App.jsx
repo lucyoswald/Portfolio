@@ -1,12 +1,12 @@
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Typist from "react-typist-component";
-import About from "./components/About";
+import About from "../components/About";
 import { Link } from "react-scroll";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import logo from "./assets/128851704_padded_logo-removebg-preview.png";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
+import logo from "../assets/128851704_padded_logo-removebg-preview.png";
 import { useEffect, useRef, useState } from "react";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
