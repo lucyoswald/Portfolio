@@ -62,6 +62,9 @@ const Contact = ({ theme }) => {
           className={`fa-solid fa-arrow-up fa-bounce back-to-top ${theme}`}
         />
       )}
+      <div className="copyright_div">
+        <p class="copyright">&copy; Built by Lucy Oswald 2023</p>
+      </div>
     </Element>
   );
 };
