@@ -12,6 +12,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon } from "@fortawesome/free-regular-svg-icons";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
+import vectorImage from "../assets/vector.png";
 
 const Home = () => {
   const [theme, setTheme] = useState("dark");
@@ -108,7 +109,7 @@ const Home = () => {
             </div>
             <div className="image_container">
               <img
-                src={"../assets/vector.png"}
+                src={vectorImage}
                 alt="Vector"
                 className="girl animate"
                 ref={imageRef}

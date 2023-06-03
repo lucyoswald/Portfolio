@@ -3,7 +3,11 @@ import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 
-// eslint-disable-next-line react/prop-types
+// Import your images
+import GitHubIcon from "../assets/GitHub-Mark-removebg-preview.png";
+import LinkedInIcon from "../assets/linkedin-removebg-preview.png";
+import EmailIcon from "../assets/email-removebg-preview.png";
+
 const Contact = ({ theme }) => {
   const [isVisible, setIsVisible] = useState(false);
   const scrollToTop = () => {
@@ -38,17 +42,17 @@ const Contact = ({ theme }) => {
           target="_blank"
           rel="noreferrer"
         >
-          <img src="./assets/GitHub-Mark-removebg-preview.png" />
+          <img src={GitHubIcon} alt="GitHub" />
         </a>
         <a
           href="https://www.linkedin.com/in/lucy-oswald-258056110/"
           target="_blank"
           rel="noreferrer"
         >
-          <img src="./assets/linkedin-removebg-preview.png" />
+          <img src={LinkedInIcon} alt="LinkedIn" />
         </a>
         <a href="mailto:lucy_oswald@hotmail.co.uk">
-          <img src="./assets/email-removebg-preview.png" />
+          <img src={EmailIcon} alt="Email" />
         </a>
       </div>
       {isVisible && (

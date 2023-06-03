@@ -1,8 +1,33 @@
-/* eslint-disable react/prop-types */
 import { Element } from "react-scroll";
 import { Tab, Tabs } from "react-bootstrap";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
+
+// Confident skills
+import ReactIcon from "../assets/confident/React_icon.png";
+import SassIcon from "../assets/confident/Sass_icon.png";
+import VSIcon from "../assets/confident/VS_icon.png";
+import NpmIcon from "../assets/confident/npm_icon.png";
+import MongoDB from "../assets/confident/mongodb_icon.png";
+import JS from "../assets/confident/JavaScript_icon.png";
+import HTML from "../assets/confident/HTML5_icon.png";
+import NodeIcon from "../assets/confident/node_icon.png";
+import CssIcon from "../assets/confident/css3_icon.png";
+import PostmanIcon from "../assets/confident/postman_icon.png";
+import ExpressIcon from "../assets/confident/express_icon.png";
+import Bootstrap_icon from "../assets/confident/Bootstrap_icon.png";
+import Jira_icon from "../assets/confident/JIRA_icon.png";
+import T_icon from "../assets/confident/Trello.png";
+
+// Comfortable skills
+import PythonIcon from "../assets/comfortable/Python_icon.png";
+import DjangoIcon from "../assets/comfortable/django_icon.png";
+import HerokuIcon from "../assets/comfortable/Heroku_icon.png";
+import NetlifyIcon from "../assets/comfortable/Netlify_icon.png";
+import JwtIcon from "../assets/comfortable/jwt_icon.png";
+import GitIcon from "../assets/comfortable/Git_icon.png";
+import GithubIcon from "../assets/comfortable/github_icon.png";
+
 const Skills = ({ theme }) => {
   return (
     <Element name="skills_section">
@@ -22,8 +47,9 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/confident/React_icon.png" />
+                <img src={ReactIcon} />
               </OverlayTrigger>
+              {/* Repeat for all other Confident skills */}
               <OverlayTrigger
                 placement="bottom"
                 overlay={
@@ -32,7 +58,7 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/confident/Sass_icon.png" />
+                <img src={SassIcon} />
               </OverlayTrigger>
               <OverlayTrigger
                 placement="bottom"
@@ -42,9 +68,8 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/confident/VS_icon.png" />
+                <img src={VSIcon} />
               </OverlayTrigger>
-
               <OverlayTrigger
                 placement="bottom"
                 overlay={
@@ -53,7 +78,7 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/confident/npm_icon.png" />
+                <img src={NpmIcon} />
               </OverlayTrigger>
               <OverlayTrigger
                 placement="bottom"
@@ -63,9 +88,8 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/confident/mongodb_icon.png" />
+                <img src={MongoDB} />
               </OverlayTrigger>
-
               <OverlayTrigger
                 placement="bottom"
                 overlay={
@@ -74,9 +98,8 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/confident/JavaScript_icon.png" />
+                <img src={JS} />
               </OverlayTrigger>
-
               <OverlayTrigger
                 placement="bottom"
                 overlay={
@@ -85,7 +108,7 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/confident/HTML5_icon.png" />
+                <img src={HTML} />
               </OverlayTrigger>
               <OverlayTrigger
                 placement="bottom"
@@ -95,7 +118,7 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/confident/node_icon.png" />
+                <img src={NodeIcon} />
               </OverlayTrigger>
               <OverlayTrigger
                 placement="bottom"
@@ -105,7 +128,7 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/confident/css3_icon.png" />
+                <img src={CssIcon} />
               </OverlayTrigger>
               <OverlayTrigger
                 placement="bottom"
@@ -115,7 +138,7 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/confident/postman_icon.png" />
+                <img src={PostmanIcon} />
               </OverlayTrigger>
               <OverlayTrigger
                 placement="bottom"
@@ -125,7 +148,7 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/confident/express.icon.png" />
+                <img src={ExpressIcon} />
               </OverlayTrigger>
               <OverlayTrigger
                 placement="bottom"
@@ -135,7 +158,7 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/confident/Bootstrap_icon.png" />
+                <img src={Bootstrap_icon} />
               </OverlayTrigger>
               <OverlayTrigger
                 placement="bottom"
@@ -145,9 +168,20 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/confident/JIRA_icon.png" />
+                <img src={Jira_icon} />
               </OverlayTrigger>
               <OverlayTrigger
+                placement="bottom"
+                overlay={
+                  <Tooltip id="edit-tooltip" style={{ fontSize: "10px" }}>
+                    TRELLO
+                  </Tooltip>
+                }
+              >
+                <img src={T_icon} />
+              </OverlayTrigger>
+
+              {/* <OverlayTrigger
                 placement="bottom"
                 overlay={
                   <Tooltip id="edit-tooltip" style={{ fontSize: "10px" }}>
@@ -155,8 +189,8 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/confident/Trello.png" />
-              </OverlayTrigger>
+                <img src={Trello_icon} />
+              </OverlayTrigger> */}
             </div>
           </Tab>
           <Tab eventKey="comfortable" title="Comfortable" className="tab-pane">
@@ -169,8 +203,9 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/comfortable/Python_icon.png" />
+                <img src={PythonIcon} />
               </OverlayTrigger>
+
               <OverlayTrigger
                 placement="bottom"
                 overlay={
@@ -179,7 +214,7 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/comfortable/django_icon.png" />
+                <img src={DjangoIcon} />
               </OverlayTrigger>
               <OverlayTrigger
                 placement="bottom"
@@ -189,7 +224,7 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/comfortable/Heroku_icon.png" />
+                <img src={HerokuIcon} />
               </OverlayTrigger>
               <OverlayTrigger
                 placement="bottom"
@@ -199,7 +234,7 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/comfortable/Netlify_icon.png" />
+                <img src={NetlifyIcon} />
               </OverlayTrigger>
               <OverlayTrigger
                 placement="bottom"
@@ -209,7 +244,7 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/comfortable/jwt_icon.png" />
+                <img src={JwtIcon} />
               </OverlayTrigger>
               <OverlayTrigger
                 placement="bottom"
@@ -219,7 +254,7 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/comfortable/Git_icon.png" />
+                <img src={GitIcon} />
               </OverlayTrigger>
               <OverlayTrigger
                 placement="bottom"
@@ -229,7 +264,7 @@ const Skills = ({ theme }) => {
                   </Tooltip>
                 }
               >
-                <img src="./assets/comfortable/github_icon.png" />
+                <img src={GithubIcon} />
               </OverlayTrigger>
             </div>
           </Tab>
