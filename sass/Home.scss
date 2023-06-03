@@ -163,19 +163,21 @@
   width: 45px;
   height: 45px;
   border-radius: 10px;
+  border: none;
   background-color: #1e3851;
   animation: bounce 2s infinite;
   border: none;
 }
 
 .brightness {
-  filter: invert(100%);
+  color: white;
 }
 .moon {
   width: 20px;
   height: 20px;
   color: #6366f1;
 }
+
 .custom-navbar .navbar-toggler-icon {
   background-image: linear-gradient(
     to bottom,
@@ -199,4 +201,17 @@
   top: 25px;
   right: 0;
   z-index: 2;
+}
+
+@media (max-width: 400px) {
+  .brightness {
+    color: white;
+    margin-right: 5px;
+  }
+  .moon {
+    width: 20px;
+    height: 20px;
+    color: #6366f1;
+    margin-right: 5px;
+  }
 }
