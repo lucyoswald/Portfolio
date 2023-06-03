@@ -97,10 +97,10 @@
 }
 
 .carousel-control-next {
-  right: -150px;
+  right: -150px !important;
 }
 .carousel-control-prev {
-  left: -150px;
+  left: -150px !important;
 }
 @media (max-width: 990px) {
   .project_item {
