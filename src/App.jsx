@@ -101,7 +101,7 @@ const Home = () => {
                 <h5 className={`typist_text ${theme}`}>
                   <span className="highlight"> HELLO! I&apos;M LUCY</span>
                   <br />
-                  A Full Stack Software Engineer <br />
+                  A Junior Software Engineer <br />
                   Based in London.
                 </h5>
               </Typist>
