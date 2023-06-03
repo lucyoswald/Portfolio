@@ -1,0 +1,8 @@
+.Typist {
+  display: inline-block;
+  white-space: pre; // Preserve line breaks within the text
+
+  .Cursor {
+    display: none; // Hide the cursor
+  }
+}

@@ -1,0 +1,321 @@
+// THEME COLOURS
+
+// HOME COMPONENT //
+.home_background {
+  background-color: #0d2438;
+}
+.home_background.dark {
+  background-color: #0d2438;
+}
+.home_background.light {
+  background-color: #e6e6fa;
+}
+.typist_text.dark {
+  margin: 0;
+  font-size: 25px;
+  color: white;
+}
+.typist_text.light {
+  margin: 0;
+  font-size: 25px;
+  color: #0d2438;
+  font-weight: bold;
+}
+.toggle_button.dark {
+  margin-top: 100px;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #1e3851;
+  border: none;
+}
+
+.toggle_button.light {
+  margin-top: 100px;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #d0d0eab3;
+  border: none;
+}
+
+// HOME COMPONENT //
+
+// ABOUT COMPONENT //
+
+.about_text.light {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #e6e6fa;
+  color: black;
+  padding-top: 100px;
+  height: 1000px;
+  padding-bottom: 100px;
+}
+
+.about_box.light {
+  background-color: #d0d0eab3;
+  padding: 30px;
+  border-radius: 10px;
+  width: 700px;
+  animation: slideInUp 1s ease;
+}
+
+.about_text.dark {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #0d2438;
+  color: white;
+  padding-top: 100px;
+  height: 1000px;
+  padding-bottom: 100px;
+}
+
+.about_box.dark {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+  width: 700px;
+  animation: slideInUp 1s ease;
+}
+
+// ABOUT COMPONENT //
+
+// SKILLS COMPONENT //
+.skills.dark {
+  display: grid;
+  place-items: center;
+  padding-top: 200px;
+  padding-bottom: 300px;
+  height: 1000px;
+  background-color: #0d2438;
+}
+
+.confident_skills.dark h5,
+.comfortable_skills.dark h5 {
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  background-color: #0d2438;
+}
+
+.custom-tabs .nav-link.dark {
+  background-color: #0d2438;
+  color: rgba(211, 211, 211, 0.493);
+  font-size: 20px;
+  margin: 0 10px;
+  margin-top: 150px;
+  white-space: nowrap;
+}
+
+.custom-tabs.dark .nav-link:hover {
+  color: #6366f1;
+}
+.custom-tabs.light .nav-link:hover {
+  color: #6366f1;
+}
+.custom-tabs .nav-link.active.dark {
+  background-color: #0d2438;
+  font-size: 20px;
+  color: white;
+}
+.custom-tabs.dark {
+  display: flex;
+  justify-content: center;
+  background-color: #0d2438;
+  color: #030a0f;
+}
+
+.custom-tabs .nav.dark {
+  justify-content: center;
+  width: 100%;
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.confident_skills img,
+.comfortable_skills img.dark {
+  transition: transform 0.3s ease;
+  filter: invert(100%);
+}
+
+.skills.light {
+  display: grid;
+  place-items: center;
+  padding-top: 200px;
+  padding-bottom: 300px;
+  height: 1000px;
+  background-color: #e6e6fa;
+}
+
+.confident_skills h5,
+.comfortable_skills h5.light {
+  width: 100%;
+  font-size: 20px;
+  color: #0d2438;
+  background-color: #e6e6fa;
+}
+
+.custom-tabs.light .nav-link {
+  background-color: #e6e6fa;
+  color: #0d2438;
+  font-size: 20px;
+  margin: 0 10px;
+  margin-top: 150px;
+  white-space: nowrap;
+}
+
+.custom-tabs.light .nav-link.active {
+  background-color: #e6e6fa;
+  font-size: 20px;
+  color: #0d2438;
+  border: 1px solid #0d2438;
+}
+.custom-tabs.light {
+  display: flex;
+  justify-content: center;
+  background-color: #e6e6fa;
+  color: #0d2438;
+  border-bottom: 1px solid #0d2438;
+}
+
+.custom-tabs.light .nav {
+  justify-content: center;
+  width: 100%;
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.confident_skills.light img,
+.comfortable_skills.light img {
+  transition: transform 0.3s ease;
+  filter: invert(0%);
+}
+
+// SKILLS COMPONENT //
+
+// PROJECTS COMPONENT //
+
+.github_button.dark,
+.live_site_button.dark {
+  border-radius: 15px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 8px;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.github_button.dark:hover,
+.live_site_button.dark:hover {
+  background-color: white;
+  color: #0d2438;
+}
+.github_button.dark:hover .button_icon.dark,
+.live_site_button.dark:hover .button_icon.dark {
+  color: lightgray;
+}
+
+.icon_section_project.dark img {
+  width: 24px;
+  height: 20px;
+  padding-right: 5px;
+  filter: invert(100%);
+  transition: transform 0.3s ease;
+}
+
+.carousel-control-next-icon.dark,
+.carousel-control-prev-icon.dark {
+  filter: invert(0%);
+}
+
+.projects_section.light {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e6fa;
+  color: #0d2438;
+  height: 1000px;
+}
+
+.github_button.light,
+.live_site_button.light {
+  border-radius: 15px;
+  border: 2px solid #0d2438;
+  background-color: transparent;
+  color: #0d2438;
+  padding: 8px;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.github_button.light:hover,
+.live_site_button.light:hover {
+  background-color: #0d2438;
+  color: white;
+}
+.github_button.light:hover .button_icon.light,
+.live_site_button.light:hover .button_icon.light {
+  color: #0d2438;
+}
+
+.icon_section_project.light img {
+  width: 24px;
+  height: 20px;
+  padding-right: 5px;
+  filter: invert(0%);
+  transition: transform 0.3s ease;
+}
+
+.carousel-control-next-icon.light,
+.carousel-control-prev-icon.light {
+  filter: invert(1);
+}
+
+// PROJECTS COMPONENT //
+
+// CONTACT COMPONENT //
+.back-to-top.light {
+  padding: 10px;
+  color: #6366f1;
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 30px;
+  position: fixed;
+  right: 40px;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 999;
+}
+.back-to-top.dark {
+  padding: 10px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 30px;
+  position: fixed;
+  right: 40px;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+// CONTACT COMPONENT //

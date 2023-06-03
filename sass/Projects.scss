@@ -1,0 +1,177 @@
+.projects_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d2438;
+  color: white;
+  height: 1000px;
+}
+
+.project_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.project_image {
+  width: 650px;
+  height: 450px;
+  padding: 20px;
+  border-radius: 30px;
+  margin-left: 5px;
+}
+
+.text_box {
+  width: 500px;
+  margin-top: 30px;
+}
+
+.text_box h6 {
+  margin-bottom: 10px;
+  font-size: 23px;
+}
+
+.text_box p {
+  text-align: justify;
+}
+
+.icon_section_project {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.icon_section_project img {
+  width: 24px;
+  height: 20px;
+  padding-right: 5px;
+  filter: invert(100%);
+  transition: transform 0.3s ease;
+}
+.icon_section_project img:hover {
+  transform: translateY(-5px);
+}
+.button_group {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.github_icon {
+  width: 20px;
+  height: 20px;
+}
+.link_icon {
+  width: 20px;
+  height: 20px;
+}
+.github_button,
+.live_site_button {
+  border-radius: 15px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 8px;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  // filter: invert(100%);
+}
+
+.github_button:hover,
+.live_site_button:hover {
+  background-color: white;
+  color: #0d2438;
+}
+.github_button:hover .button_icon,
+.live_site_button:hover .button_icon {
+  color: lightgray;
+}
+
+.timing_title {
+  font-size: 20px;
+}
+
+.carousel-control-next {
+  right: -150px;
+}
+.carousel-control-prev {
+  left: -150px;
+}
+@media (max-width: 990px) {
+  .project_item {
+    flex-direction: column !important;
+  }
+  .project_image {
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 30px;
+    margin-left: 5px;
+  }
+
+  .text_box {
+    width: 100%;
+    padding: 30px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .text_box h6 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .text_box p {
+    text-align: center;
+    font-size: 14px;
+    flex-wrap: nowrap;
+  }
+  .github_button,
+  .live_site_button {
+    font-size: 11px;
+  }
+
+  .button_group {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .icon_section_project {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: inline;
+  }
+
+  .carousel-control-next {
+    top: 100px;
+  }
+  .carousel-control-prev {
+    top: 100px;
+  }
+}
+
+.col-md-6 {
+  display: flex;
+  justify-content: center;
+}
+.carousel-control-prev-icon {
+  display: none !important;
+}
+
+/* Custom CSS */
+.carousel-indicators li {
+  background-color: black !important;
+}
+
+.carousel-indicators li.active {
+  background-color: white !important;
+}
