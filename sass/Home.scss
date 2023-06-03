@@ -206,12 +206,15 @@
 @media (max-width: 400px) {
   .brightness {
     color: white;
-    margin-right: 5px;
+    // margin-right: 10px !important;
   }
   .moon {
     width: 20px;
     height: 20px;
     color: #6366f1;
-    margin-right: 5px;
+    // margin-right: 10px !important;
+  }
+  .toggle_button {
+    background-color: transparent !important;
   }
 }
