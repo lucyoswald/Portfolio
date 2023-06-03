@@ -136,6 +136,7 @@
   color: white;
   letter-spacing: 10px;
   margin-left: -24px !important;
+  margin-top: 5px;
 }
 @keyframes bounce {
   0%,
@@ -165,7 +166,6 @@
 
 .brightness {
   filter: invert(100%);
-  // animation: bounce 2s infinite;
 }
 .moon {
   width: 20px;
