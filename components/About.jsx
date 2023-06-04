@@ -32,7 +32,7 @@ const About = ({ theme }) => {
           </h5>
 
           <p className="my_text">
-            With a 6 years experience as an Executive Assistant in various
+            With 6 years experience as an Executive Assistant in various
             industries, such as Fashion, Tech, and Media Investment, I have
             acquired a vast range of skills that I believe give me the ability
             to adapt to any environment. <br /> <br />

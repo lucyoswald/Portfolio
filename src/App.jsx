@@ -29,7 +29,11 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <Navbar className={`custom-navbar sticky-top ${theme}`} expand="lg">
+      <Navbar
+        style={{ position: "sticky", top: 0, zIndex: 100 }}
+        className={`custom-navbar sticky-top ${theme}`}
+        expand="lg"
+      >
         <Navbar.Brand>
           <header className={`header ${theme}`}>
             <img src={logo} alt="Logo" className={`logo ${theme}`} />{" "}
@@ -79,48 +83,49 @@ const Home = () => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-
-      <button
-        style={{ position: "absolute", top: "3rem", right: "3rem" }}
-        onClick={toggleTheme}
-        className={`toggle_button ${theme}`}
-      >
-        {theme === "dark" ? (
-          <LightModeOutlinedIcon className={`brightness ${theme}`} />
-        ) : (
-          <FontAwesomeIcon
-            icon={faMoon}
-            className={`moon fa-bounce ${theme}`}
-          />
-        )}
-      </button>
-      <div className={`home_background ${theme}`}>
-        <div>
-          <div className="typist_container">
-            <div className="typist_text_container">
-              <Typist key={theme}>
-                <h5 className={`typist_text ${theme}`}>
-                  <span className="highlight"> HELLO! I&apos;M LUCY</span>
-                  <br />
-                  A Junior Software Engineer <br />
-                  Based in London.
-                </h5>
-              </Typist>
-            </div>
-            <div className="image_container">
-              <img
-                src={vectorImage}
-                alt="Vector"
-                className="girl animate"
-                ref={imageRef}
-              />
+      <div style={{ overflowX: "hidden" }}>
+        <button
+          style={{ position: "absolute", top: "3rem", right: "3rem" }}
+          onClick={toggleTheme}
+          className={`toggle_button ${theme}`}
+        >
+          {theme === "dark" ? (
+            <LightModeOutlinedIcon className={`brightness ${theme}`} />
+          ) : (
+            <FontAwesomeIcon
+              icon={faMoon}
+              className={`moon fa-bounce ${theme}`}
+            />
+          )}
+        </button>
+        <div className={`home_background ${theme}`}>
+          <div>
+            <div className="typist_container">
+              <div className="typist_text_container">
+                <Typist key={theme}>
+                  <h5 className={`typist_text ${theme}`}>
+                    <span className="highlight"> HELLO! I&apos;M LUCY</span>
+                    <br />
+                    A Junior Software Engineer <br />
+                    Based in London.
+                  </h5>
+                </Typist>
+              </div>
+              <div className="image_container">
+                <img
+                  src={vectorImage}
+                  alt="Vector"
+                  className="girl animate"
+                  ref={imageRef}
+                />
+              </div>
             </div>
           </div>
+          <About theme={theme} name="about_section" />
+          <Skills theme={theme} name="skills_section" />
+          <Projects theme={theme} name="projects_section" />
+          <Contact theme={theme} name="contact_section" />
         </div>
-        <About theme={theme} name="about_section" />
-        <Skills theme={theme} name="skills_section" />
-        <Projects theme={theme} name="projects_section" />
-        <Contact theme={theme} name="contact_section" />
       </div>
     </div>
   );
