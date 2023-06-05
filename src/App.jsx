@@ -92,10 +92,7 @@ const Home = () => {
           {theme === "dark" ? (
             <LightModeOutlinedIcon className={`brightness ${theme}`} />
           ) : (
-            <FontAwesomeIcon
-              icon={faMoon}
-              className={`moon fa-bounce ${theme}`}
-            />
+            <FontAwesomeIcon icon={faMoon} className={`moon ${theme}`} />
           )}
         </button>
         <div className={`home_background ${theme}`}>

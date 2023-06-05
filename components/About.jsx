@@ -28,7 +28,7 @@ const About = ({ theme }) => {
         <div className={`about_box ${theme}`} style={boxStyles}>
           <h5>
             {" "}
-            Matcha Lover | Software Engineer | Animal Crossing Enuthusist
+            Matcha Lover | Software Engineer | Animal Crossing Enthusiast
           </h5>
 
           <p className="my_text">
@@ -36,7 +36,7 @@ const About = ({ theme }) => {
             industries, such as Fashion, Tech, and Media Investment, I have
             acquired a vast range of skills that I believe give me the ability
             to adapt to any environment. <br /> <br />
-            I always had a great interest in tech, with a genuine curiosity.
+            I've always had a great interest and a keen curiosity in tech.
             I&apos;m a natural problem solver so really enjoyed the satisfaction
             I felt while completing problems, I discovered this when building my
             own menu on a game via codecademy. So I made the decision to take
@@ -44,7 +44,15 @@ const About = ({ theme }) => {
             24-week Software Engineering course, I developed my coding abilities
             and it really ignited my passion for the Tech industry. <br />
             <br />I am excited to contribute my enthusiasm, curiosity, and
-            dedication to a collaborative team. <br />
+            dedication to a collaborative team.
+            <br />
+            <p className="interests"> Interests </p>
+            I used to cook professionally and I've really come to love all
+            things food. Been thinking about starting a food blog soon to share
+            my passion. On the gaming side, I've got a soft spot for Animal
+            Crossing. There's something really relaxing about its creative
+            gameplay and community vibes.
+            <br />
             <br />
             Feel free to explore my projects!
           </p>

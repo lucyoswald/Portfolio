@@ -18,15 +18,17 @@
 }
 
 .about_text h5 {
-  font-size: 25px;
+  font-size: 24px;
   margin-bottom: 20px;
 }
 
 .about_text p {
   margin: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
-
+.interests {
+  font-size: 23px !important;
+}
 @keyframes slideInUp {
   0% {
     transform: translateY(50px);
