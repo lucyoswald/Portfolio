@@ -46,6 +46,7 @@ const About = ({ theme }) => {
             <br />I am excited to contribute my enthusiasm, curiosity, and
             dedication to a collaborative team.
             <br />
+            <br />
             <p className="interests"> Interests </p>
             I used to cook professionally and I've really come to love all
             things food. Been thinking about starting a food blog soon to share
